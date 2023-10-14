@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.errorContainer{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.errorContent{
+    margin: 0 auto;
+    width: 50%;
+    padding: 2rem 2rem;
+    background-color: lightgray;
+}
+.errorBtn{
+    padding: 1rem 2rem;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    /* margin-top: 2rem; */
+}
+
+.funny-404-heading {
+  font-size: 2rem;
+  color: #ff5733;
+}
+
+.funny-404-message {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.funny-404-image {
+  width: 80%;
+  /* max-width: 400px; */
+  margin: 2rem 0;
+  display: block;
+}

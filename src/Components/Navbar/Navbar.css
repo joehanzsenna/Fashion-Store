@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbarContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 1rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.furnsLogo a {
+  color: rgb(182, 156, 11);
+  text-decoration: none;
+}
+.furnsLogo a:hover {
+  color: #000;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(182, 156, 11);
+}
+.nav-links li a:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.navMenu {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 5rem; */
+}
+.menuIcon {
+  display: none;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navBtn01 {
+  background-color: rgb(182, 156, 11);
+  border: none;
+  padding: 8px 1rem;
+  color: white;
+  cursor: pointer;
+}
+.navBtn02 {
+  background-color: white;
+  border: 1px solid rgb(182, 156, 11);
+  padding: 8px 1rem;
+  color: rgb(182, 156, 11);
+  cursor: pointer;
+}
+
+/* Media Queries  */
+
+@media (max-width: 768px) {
+  .navMenu {
+    /* display: none; */
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.726);
+    left: -100%;
+    width: 100%;
+    top: 4rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    transition: 1s ease-in-out;
+    z-index: 2;
+  }
+  .navActive {
+    left: 0;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-links li a:hover {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    /* justify-content: center; */
+  }
+}
