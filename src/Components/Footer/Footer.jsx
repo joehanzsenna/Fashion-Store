@@ -1,37 +1,48 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footerContainer">
       <div className="footerContents">
-        <h2 className="Logo">Furns</h2>
+        <h2 className="Logo">
+          <Link to={'/'}>
+            Furns
+          </Link>
+        </h2>
         <div className="footerLinks">
           <li>
-            <a href="#">Shop</a>
+            <Link to={"/shop"}>Shop</Link>
           </li>
           <li>
-            <a href="#">Furniture Store</a>
+            <Link to={"/shop"}>Fashion Store</Link>
           </li>
           <li>
-            <a href="#">Interior Design</a>
+            <Link to={'/shop'}>
+              Unique Designs
+            </Link>
           </li>
           <li>
-            <a href="#">Ceramics</a>
+            <Link to={'/shop'}>
+              CLassic Wears
+            </Link>
           </li>
           <li>
-            <a href="#">Decorations</a>
+            <Link to={'/shop'}>
+              Inspiring Wears
+            </Link>
           </li>
         </div>
         <div className="footerLinks">
           <li>
-            <a href="#">About us</a>
+            <Link to={"/about"}>About us</Link>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <Link to={"/contacts"}>Contact us</Link>
           </li>
           <li>
-            <a href="#">Cart</a>
+            <Link to={"/cart"}>Cart</Link>
           </li>
         </div>
         <div>

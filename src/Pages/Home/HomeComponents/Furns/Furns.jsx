@@ -1,6 +1,7 @@
 import React from "react";
 import "./Furns.css";
 import img2 from "../../../../assets/FashionImg.jpg";
+import { Link } from "react-router-dom";
 
 const Furns = () => {
   return (
@@ -16,7 +17,9 @@ const Furns = () => {
             elit purus aliquam varius fusce. Proin viverra pharetra, iaculis id
             morbi tempus ut. Vel nibh vitae rutrum lorem eu turpis tempor.
           </p>
+          <Link to={'/shop'}>
           <button className="furnsBtn">Get Started</button>
+          </Link>
         </div>
         <div className="furns-img">
           <img src={img2} alt="" className="img2" />

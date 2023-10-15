@@ -35,3 +35,14 @@
 .productItem{
     background-color: lightgrey;
 }
+
+@media (max-width: 768px){
+    .shopHeroContents{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 428px){
+    .shopHeroContents{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* logo  */}
 
         <h1 className="furnsLogo">
-          <Link to={"/"} target="_blank">Furns</Link>
+          <Link to={"/"}>Furns</Link>
         </h1>
 
         {/* lists / buttons  */}
