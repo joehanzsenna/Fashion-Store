@@ -20,8 +20,10 @@
   border-bottom: 0.1rem solid grey;
   padding: 1rem 0;
 }
-.Logo {
+.Logo a {
   color: gold;
+  text-decoration: none;
+  cursor: pointer;
 }
 .footerLinks li {
   list-style-type: none;
