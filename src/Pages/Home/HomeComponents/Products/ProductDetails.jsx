@@ -55,8 +55,8 @@ const ProductDetails = () => {
             </div>
 
             <div className="productBtn">
-              <button>Add to Cart</button>
-              <button>Preview</button>
+              <button className="productBtn01">Add to Cart</button>
+              {/* <button>Preview</button> */}
             </div>
             <p>{product.description}</p>
           </div>

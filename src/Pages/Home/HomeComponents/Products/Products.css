@@ -47,12 +47,14 @@
     color: #fff;
     border: none;
     padding: .5rem 1rem;
+    cursor: progress;
 }
 .productBtn02{
     /* background-color: gold; */
     color:  rgb(182, 156, 11);
     border: .1rem solid  rgb(182, 156, 11);
     padding: .5rem 1rem;
+    cursor: pointer;
 }
 .productText{
     display: flex;
